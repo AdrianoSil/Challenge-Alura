@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECODIFICADOR DE TEXTOS</title>
+    <link rel="icon" href="imagens/lupa.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<body>
+    
+    <header>
+        <img src="imagens/logoalura.png" alt="Logo de Alura" class="logo_alura">
+        <h1 class="titulo">DECODIFICADOR DE TEXTOS</h1>
+    </header>
+
+    <main>
+
+    <section>
+    <div>
+        <label for="texto" class="texto_decodificar">Digite o texto para ser criptografado</label>
+        <input placeholder="Digite seu texto aqui" class="texto_box" >
+    </div>
+    
+    <div>
+        <img src="imagens/alert-icon.png" class="alerta">
+        <p class="alerta_texto">Não são permitidos letras maiúsculas ou caracteres especiais!</p>
+        <img src="imagens/alert-icon.png" class="alerta2">
+    </div>
+
+    <div class="botoes">
+    
+            <button class="criptografar" onclick="BotonCriptografar()">criptografar</button>
+
+            <button class="descriptografar" onclick="BotonDesdecodificar()">descriptografar</button>  
+        
+    </div>
+    
+    </section>
+
+    <section>
+        <div>
+            <textarea class="mensagem"></textarea>
+            <h3 class="titulo3" id="titulo4">Nenhuma mensagem foi encontrada</h3>
+            <p class="digite_texto" id="digite_texto2">Digite o texto que deseja criptografar ou descriptografar.</p>
+        </div>
+        <div class="boton_copiar">
+            <button onclick="copiar()">Copiar Texto</button>
+        </div>
+    </section>
+</main>
+
+<footer class="footer1">
+
+<p>por Adriano Silva</p>
+
+</footer>
+    
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
